@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+xmlns="http://xmlns.jcp.org/xml/ns/javaee/"
+xmlns:web="http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd"
+xsi:schemaLocation="http://java.sun.com/xml/ns/javaee
+http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd" 
+id="WebApp_ID" version="2.5">
+	<display-name>BankProject</display-name>
+	<welcome-file-list>
+		<welcome-file>index.html</welcome-file>
+		<welcome-file>index.htm</welcome-file>
+		<welcome-file>index.jsp</welcome-file>
+		<welcome-file>default.html</welcome-file>
+		<welcome-file>default.htm</welcome-file>
+		<welcome-file>default.jsp</welcome-file>
+	</welcome-file-list>
+	<servlet>
+		<servlet-name>LoginServlet</servlet-name>
+		<servlet-class>com.revature.servlets.LoginServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>LoginServlet</servlet-name>
+		<url-pattern>/userLogin</url-pattern>  <!-- This is the URL of the servlet. -->
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>RegisterServlet</servlet-name>
+		<servlet-class>com.revature.servlets.RegisterServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>RegisterServlet</servlet-name>
+		<url-pattern>/register</url-pattern>  <!-- This is the URL of the servlet. -->
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>ForgotPasswordServlet</servlet-name>
+		<servlet-class>com.revature.servlets.ForgotPasswordServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>ForgotPasswordServlet</servlet-name>
+		<url-pattern>/forgotPassword</url-pattern>  <!-- This is the URL of the servlet. -->
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>EditProfileServlet</servlet-name>
+		<servlet-class>com.revature.servlets.EditProfileServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>EditProfileServlet</servlet-name>
+		<url-pattern>/editProfile</url-pattern>  <!-- This is the URL of the servlet. -->
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>DepositFundsServlet</servlet-name>
+		<servlet-class>com.revature.servlets.DepositFundsServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>DepositFundsServlet</servlet-name>
+		<url-pattern>/depositFunds</url-pattern>  <!-- This is the URL of the servlet. -->
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>TransferFundsServlet</servlet-name>
+		<servlet-class>com.revature.servlets.TransferFundsServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>TransferFundsServlet</servlet-name>
+		<url-pattern>/transferFunds</url-pattern>  <!-- This is the URL of the servlet. -->
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>UpgradeToPremiumServlet</servlet-name>
+		<servlet-class>com.revature.servlets.UpgradeToPremiumServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>UpgradeToPremiumServlet</servlet-name>
+		<url-pattern>/upgradePremium</url-pattern>  <!-- This is the URL of the servlet. -->
+	</servlet-mapping>
+	<servlet>
+		<servlet-name>OpenAccountServlet</servlet-name>
+		<servlet-class>com.revature.servlets.OpenAccountServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>OpenAccountServlet</servlet-name>
+		<url-pattern>/openAccount</url-pattern>  <!-- This is the URL of the servlet. -->
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>AddJointHolderServlet</servlet-name>
+		<servlet-class>com.revature.servlets.AddJointHolderServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>AddJointHolderServlet</servlet-name>
+		<url-pattern>/addJointHolder</url-pattern>  <!-- This is the URL of the servlet. -->
+	</servlet-mapping>
+</web-app>
